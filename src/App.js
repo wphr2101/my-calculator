@@ -36,7 +36,7 @@ function App() {
       return;
     }
     
-    const newResult = result / Number(inputVal);
+    const newResult = result / inputVal;
     setResult(newResult);
   }
  
@@ -61,10 +61,10 @@ function App() {
     
         <input pattern="[0-9]*" ref={inputRef} type="number" placeholder="Type a number" /> 
     
-        <button onClick={plus}>add</button>
-        <button onClick={minus}>subtract</button>
-        <button onClick={times}>multiply</button>
-        <button onClick={divide}>divide</button>
+        <button onClick={plus}>Add</button>
+        <button onClick={minus}>Subtract</button>
+        <button onClick={times}>Multiply</button>
+        <button onClick={divide}>Divide</button>
         <button onClick={resetInput}>Reset Input</button>
         <button onClick={resetResult}>Reset Result</button>
       </form> 
